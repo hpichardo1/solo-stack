@@ -1,9 +1,19 @@
 import firebase from 'firebase'
 
-//const firebaseApp = firebase.initializeApp({4:55})
+const firebaseApp = firebase.initializeApp({
+  apiKey: "AIzaSyAy8CA9P7RPC68u_WbsNmQDVwdnJ9Rt7MY",
+  authDomain: "fs-solo-project.firebaseapp.com",
+  projectId: "fs-solo-project",
+  storageBucket: "fs-solo-project.appspot.com",
+  messagingSenderId: "783776097013",
+  appId: "1:783776097013:web:53db9fc1ab05d0bac6dbbc",
+  measurementId: "G-XFT6BT8S96"
+})
 
-//const db = firebaseApp.firestore()
+//firestore database
+const db = firebaseApp.firestore()
 
-//const auth = firebase.auth()
+//authentication
+const auth = firebase.auth()
 
-//export { db, auth }
+export { db, auth }

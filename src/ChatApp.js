@@ -1,8 +1,11 @@
 import React from 'react'
+import LogOut from './LogOut'
 
 const ChatApp = ()=>{
   return (
-    <div>ChatApp</div>
+    <div>ChatApp
+      <LogOut />
+    </div>
   )
 }
 

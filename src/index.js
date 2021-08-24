@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { render } from 'react-dom'
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom"
 import { Provider } from "react-redux"
-import NavBar from './src/NavBar'
+import NavBar from './NavBar'
 
 class Main extends Component {
   constructor(){
@@ -12,13 +12,7 @@ class Main extends Component {
   render(){
     return (
       <div id='main'>
-        <BrowserRouter>
-          <NavBar/>
-          <Switch>
-            
-          </Switch>
-        </BrowserRouter>
-      
+        <NavBar/>
       </div>
     )
   }
