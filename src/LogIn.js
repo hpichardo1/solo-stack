@@ -6,15 +6,7 @@ import { auth } from './firebase'
 const LogIn = () =>{
   const logInWithGoogle = ()=>{
     const provider = new firebase.auth.GoogleAuthProvider()
-    
-    auth.signInWithPopup(provider).then( (result) => {
-      let credential = result.credential
-      console.log('google credential !!', credetial)
-      let user = result.user
-      console.log('google user--->', user)
-    }).catch((error)=>{
-        
-    })
+    auth.signInWithPopup(provider)
   }
   return (
     <div>
